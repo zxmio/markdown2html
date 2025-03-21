@@ -19,8 +19,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "watch": "node ./watch.js",
-    "build": "node scripts/build.js",
-    "vercel-build": "npm run build",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider node scripts/build.js",
+    "vercel-build": "node build-script.js",
     "test": "node scripts/test.js",
     "analyze": "source-map-explorer build/static/js/*.js",
     "lint": "eslint src --ext ts,tsx,js --fix",

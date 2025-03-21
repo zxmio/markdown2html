@@ -6,8 +6,7 @@
       "use": "@vercel/static-build",
       "config": {
         "distDir": "build",
-        "installCommand": "npm install --force",
-        "buildCommand": "GENERATE_SOURCEMAP=false NODE_OPTIONS='--openssl-legacy-provider --max_old_space_size=4096' npm run build"
+        "installCommand": "npm install --force"
       }
     }
   ],
