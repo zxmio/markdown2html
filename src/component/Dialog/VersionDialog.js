@@ -52,11 +52,11 @@ class VersionDialog extends Component {
         specialInfo:
           '<div style="display:flex;justify-content:center;align-items:center;"><img style="width:50%;" src="http://md.aizhuanqian.online/img/wechat_qr.df324554.jpeg"/></div>',
       };
-      const newestVersion = localStorage.getItem(NEWEST_VERSION);
-      if (data.versionNumber !== newestVersion) {
-        this.props.dialog.setVersionOpen(true);
-        localStorage.setItem(NEWEST_VERSION, data.versionNumber);
-      }
+
+      // 直接设置为不显示弹窗，并保存当前版本到 localStorage
+      this.props.dialog.setVersionOpen(false);
+      localStorage.setItem(NEWEST_VERSION, data.versionNumber);
+
       this.setState({...data});
     } catch (err) {
       console.error("读取最新版本信息错误");
