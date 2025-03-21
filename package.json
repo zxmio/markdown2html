@@ -13,6 +13,9 @@
     "type": "git",
     "url": "https://github.com/TaleAi/markdown2html"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "start": "node scripts/start.js",
     "watch": "node ./watch.js",

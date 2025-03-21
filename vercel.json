@@ -7,7 +7,7 @@
       "config": {
         "distDir": "build",
         "installCommand": "npm install --force",
-        "buildCommand": "GENERATE_SOURCEMAP=false NODE_OPTIONS='--max_old_space_size=4096' npm run build"
+        "buildCommand": "GENERATE_SOURCEMAP=false NODE_OPTIONS='--openssl-legacy-provider --max_old_space_size=4096' npm run build"
       }
     }
   ],
@@ -32,5 +32,8 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ]
+  ],
+  "env": {
+    "NODE_OPTIONS": "--openssl-legacy-provider"
+  }
 } 
