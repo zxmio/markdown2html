@@ -1,19 +1,15 @@
 {
-  "short_name": "Markdown Nice",
-  "name": "Markdown Nice",
+  "short_name": "Markdown2Html",
+  "name": "支持自定义样式的Markdown编辑器",
+  "description": "一款支持自定义样式的Markdown编辑器，支持微信公众号、知乎和稀土掘金，支持数学公式，支持导出PDF和Markdown文件",
   "icons": [
     {
-      "src": "https://my-wechat.mdnice.com/mdnice/mdnice%20logo_20191007150129.png",
-      "sizes": "128x128",
-      "type": "image/png"
-    },
-    {
-      "src": "https://my-wechat.mdnice.com/mdnice/mdnice%20logo_20191007150129.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "src": "favicon.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/svg+xml"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

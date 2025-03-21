@@ -25,3 +25,6 @@ yarn-error.log*
 dist
 package-lock.json
 lib
+# 保留.vercel文件夹，但忽略敏感配置
+.vercel/*.json
+!.vercel/project.json

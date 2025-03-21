@@ -6,7 +6,7 @@
   "private": false,
   "main": "lib/Lib.js",
   "module": "lib/Lib.js",
-  "homepage": "http://md.aizhuanqian.online",
+  "homepage": "https://markdown2html.vercel.app",
   "license": "GPL-3.0",
   "typings": "./lib/index.d.ts",
   "repository": {
@@ -17,6 +17,7 @@
     "start": "node scripts/start.js",
     "watch": "node ./watch.js",
     "build": "export GENERATE_SOURCEMAP=false&&node --max_old_space_size=4096 scripts/build.js",
+    "vercel-build": "npm run build",
     "test": "node scripts/test.js",
     "analyze": "source-map-explorer build/static/js/*.js",
     "lint": "eslint src --ext ts,tsx,js --fix",
